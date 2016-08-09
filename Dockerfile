@@ -20,6 +20,7 @@ RUN apt-get update && \
                     libnss3 \
                     gvfs-bin \
                     xdg-utils \
+                    golang \ 
                     python -y --no-install-recommends && \
     apt-get clean && \
     curl -L https://github.com/atom/atom/releases/download/${ATOM_VERSION}/atom-amd64.deb > /tmp/atom.deb && \
